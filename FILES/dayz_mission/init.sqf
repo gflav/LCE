@@ -87,7 +87,9 @@ EpochEvents = [
     ["any","any","any","any",15,"bombs"],
 	["any","any","any","any",45,"weedfield"],
 	["any","any","any","any",45,"buildingsupplies"],
-    ["any","any","any","any",50,"Treasure"]
+    ["any","any","any","any",50,"Treasure"],
+    ["any","any","any","any",25,"maze"],
+    ["any","any","any","any",27,"rubbletown"]  
 ];
 
 dayz_fullMoonNights = true;
