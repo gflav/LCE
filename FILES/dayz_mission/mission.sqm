@@ -1421,8 +1421,8 @@ class Mission
 			age="UNKNOWN";
 			name="Aircraft_safezone";
 			expCond="(player distance Aircraft_safezone) < 50;";
-			expActiv="TitleText[""Now entering Aircraft Trader"",""PLAIN DOWN""]; safeZone= true;canbuild = false;";
-			expDesactiv="TitleText[""Now leaving Aircraft Trader"",""PLAIN DOWN""]; safeZone= false;canbuild = true;";
+			expActiv="[""Now entering Aircraft Trader"",false,""enter""] spawn player_traderCity; safeZone= true";
+			expDesactiv="[""Now leaving Aircraft Trader"",false,""leave""] spawn player_traderCity; safeZone= false";
 			class Effects
 			{
 			};

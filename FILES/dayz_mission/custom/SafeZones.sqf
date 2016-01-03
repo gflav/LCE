@@ -27,7 +27,8 @@ _infiSZ =
         [[11447.472,11364.504],200,true],
         [[1606.6443,7803.5156],150,true],
         [[12944.227,12766.889],150,true],
-        [[5068.6636,9723.4248],100,true]
+        [[5068.6636,9723.4248],100,true],
+        [[12060.471,12638.533],200,true]
 ];
 if (isServer) exitWith
 {
@@ -60,7 +61,7 @@ if (isNil 'inSafeZone') then { inSafeZone = false; } else { if (typename inSafeZ
 	{
 		if (isNil 'outNow') then
 		{
-			_msg = 'You entered a Safe Zone!';
+			_msg = 'You entered a Safe Zone.';
 			hint _msg;
 			taskHint [_msg, [0,1,0,1], 'taskDone'];
 			inNow = nil;
