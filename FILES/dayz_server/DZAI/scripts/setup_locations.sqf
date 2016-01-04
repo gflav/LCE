@@ -62,9 +62,9 @@ for "_i" from 0 to ((count _cfgWorldName) -1) do {
 	if (_placeType in ["NameCityCapital","NameCity","NameVillage","NameLocal"]) then {
 		_placeName = getText (_cfgWorldName >> _x >> "name");
 		_placePos = [] + getArray (_cfgWorldName >> _x >> "position");
-		_isAllowedPos = ((({(_placePos distance (getMarkerPos _x)) < 300} count _trader_markers) == 0) && {({(_placePos distance (getMarkerPos _x)) < ((getMarkerSize _x) select 0)} count DZAI_waypointBlacklist) == 0});
+		_isAllowedPos = ((({(_placePos distance (getMarkerPos _x)) < 600} count _trader_markers) == 0) && {({(_placePos distance (getMarkerPos _x)) < ((getMarkerSize _x) select 0)} count DZAI_waypointBlacklist) == 0});
 		if (_placeType != "NameLocal") then {
-			_blacklist = createLocation ["Strategic",_placePos,600,600];
+			_blacklist = createLocation ["Strategic",_placePos,800,800];
 			if (_isAllowedPos) then {
 				DZAI_locationsLand set [(count DZAI_locationsLand),[_placeName,_placePos,_placeType]];	//Location Name, Position, Type.
 			};

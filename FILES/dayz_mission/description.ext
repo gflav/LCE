@@ -1,7 +1,7 @@
 respawn = "BASE";
 respawndelay = 5;
 onLoadMission= "DayZ Epoch Chernarus";
-OnLoadIntro = "Welcome to DayZ Epoch Chernarus";
+OnLoadIntro = "Welcome to Last Chance Epoch";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
@@ -46,6 +46,7 @@ class CfgSounds {
     };
 	*/
 };
+
 
 class RscTitles {
 	class BTC_Hud
@@ -284,11 +285,12 @@ class DayZ_loadingScreen
 };
 
 
+
+
 #include "custom\snap_pro\snappoints.hpp"
 
 
 #include "spawn\class.hpp"
 #include "spawn\halo.hpp"
 #include "spawn\spawn.hpp"
-
 
