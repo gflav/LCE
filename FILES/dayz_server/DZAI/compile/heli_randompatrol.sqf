@@ -4,7 +4,7 @@ _unitGroup = _this select 0;
 _tooClose = true;
 while {_tooClose} do {
 	_wpSelect = (DZAI_locations call BIS_fnc_selectRandom2) select 1;
-	if (((waypointPosition [_unitGroup,0]) distance _wpSelect) > 300) then {
+	if (((waypointPosition [_unitGroup,0]) distance _wpSelect) > 800) then {
 		_tooClose = false;
 	} else {
 		uiSleep 0.1;
