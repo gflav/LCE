@@ -1,0 +1,748 @@
+HERO - [["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Tanks",793],["Weapons",477]],
+BADNIT - [["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Tanks",793],["Trucks Armed",534],["Weapons",693]],
+
+BASH - [["Building Supplies",508],["Toolbelt Items",510],["Vehicle Parts",509]]
+BASH - [["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
+KLEN - [["Building Supplies",530],["Toolbelt Items",532],["Vehicle Parts",531]],
+KLEN - [["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military armed",789],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
+BLACK MARKET - [["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529],["Game Meats",790],["Vehicle Ammo",777]],
+Stary - [["Bikes and ATV",650],["Buses and Vans",651],["Cargo Trucks",653],["Fuel Trucks",655],["Military Unarmed",658],["Military Armed",792],["Trucks",659],["Used Cars",660],["Utility Vehicles",661]],
+	[["Building Supplies",662],["Toolbelt Items",663],["Vehicle Parts",664]],
+["Assault Rifle Ammo",643],["Light Machine Gun Ammo",644],["Pistol Ammo",646],["Shotguns and Single-shot Ammo",649],["Sniper Rifle Ammo",647],["Submachine Gun Ammo",648]
+["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]
+["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["EvDogTags",2]',10,'[4,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,701,'trade_weapons')
+
+// Harbinger - ["Harbinger Weapons",693],["Harbinger Ammo",694],["Harbinger Items",695]
+
+// Messiah ["Messiah Supplies",696],["Messiah Weapons",697],["Messiah Ammo",671]
+
+// Traveling ["Traveling Supplies",699],["Traveling Weapons",700],["Traveling Weapons",701]
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["HMMWV_Armored",2]',250,'[1,"ItemBriefcase100oz",1]','[1,"ItemGoldBar10oz",1]',0,789,'trade_any_vehicle')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["EvMoney",3]',0,'[10,"ItemBriefcase100oz",1]','[10,"ItemBriefcase100oz",1]',0,795,'trade_weapons')
+
+
+Pchela1T
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["EvMoney",2]',5,'[5,"ItemBriefcase100oz",1]','[3,"ItemBriefcase100oz",1]',0,,'trade_any_vehicle')
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES ('["ItemRuby",1]',5,'[8,"ItemBriefcase100oz",1]','[5,"ItemBriefcase100oz",1]',0,797,'trade_items')
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES ('["M1A2",2]',0,'[7,"ItemRuby",1]','[4,"ItemRuby",1]',0,796,'trade_any_vehicle'),
+('["M1A2_TUSK_MG",2]',0,'[8,"ItemRuby",1]','[4,"ItemRuby",1]',0,796,'trade_any_vehicle'),
+
+('["AH1Z",2]',0,'[1,"ItemRuby",1]','[1,"ItemRuby",1]',0,796,'trade_any_vehicle')
+
+GAZ_Vodnik_HMG
+M113_TK_EP1
+M113Ambul_TK_EP1
+M6_EP1
+M1128_MGS_EP1
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES ('["M2A3_EP1",2]',0,'[6,"ItemRuby",1]','[4,"ItemRuby",1]',0,799,'trade_any_vehicle_old'),
+('["Mi24_P",2]',0,'[10,"ItemBriefcase100oz",1]','[8,"ItemBriefcase100oz",1]',0,799,'trade_any_vehicle'),
+('["T55_TK_GUE_EP1",2]',0,'[8,"ItemBriefcase100oz",1]','[6,"ItemBriefcase100oz",1]',0,799,'trade_any_vehicle'),
+('["T90",2]',0,'[8,"ItemRuby",1]','[6,"ItemRuby",1]',0,799,'trade_any_vehicle_old')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES ('["Ka52Black",2]',0,'[10,"ItemBriefcase100oz",1]','[9,"ItemBriefcase100oz",1]',0,799,'trade_any_vehicle'),
+('["Mi24_P",2]',0,'[10,"ItemBriefcase100oz",1]','[8,"ItemBriefcase100oz",1]',0,799,'trade_any_vehicle')
+
+
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES ('["T90",2]',0,'[8,"ItemRuby",1]','[6,"ItemRuby",1]',0,799,'trade_any_vehicle_old')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["M4A3_RCO_GL_EP1",3]',20,'[5,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,701,'trade_weapons'),
+('["EvMoney",3]',20,'[3,"ItemBriefcase100oz",1]','[1,"ItemBriefcase100oz",1]',0,701,'trade_weapons'),
+('["BAF_L85A2_RIS_CWS",3]',20,'[3,"ItemBriefcase100oz",1]','[1,"ItemBriefcase100oz",1]',0,701,'trade_weapons'),
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["SCAR_L_STD_EGLM_TWS",3]',20,'[3,"ItemBriefcase100oz",1]','[1,"ItemBriefcase100oz",1]',0,701,'trade_weapons')
+
+
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["M47Launcher_EP1",3]',20,'[3,"ItemBriefcase100oz",1]','[1,"ItemBriefcase100oz",1]',0,701,'trade_weapons')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["Dragon_EP1",1]',20,'[4,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,704,'trade_items')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemTroutCooked",1]',20,'[2,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,704,'trade_items')
+
+
+
+
+// Messiah
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["m107_TWS_EP1",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["M107",3]',250,'[6,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["BAF_AS50_TWS",3]',250,'[8,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["BAF_L85A2_RIS_CWS",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["M110_TWS_EP1",3]',250,'[2,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["M249_TWS_EP1",3]',250,'[5,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["M32_EP1",3]',250,'[6,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["m8_tws",3]',250,'[6,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["m8_tws_sd",3]',250,'[5,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["PMC_AS50_TWS",3]',250,'[1,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["PMC_AS50_scoped",3]',250,'[8,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_H_STD_TWS_SD",3]',250,'[1,"ItemBriefcase100oz",1]','[7,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_STD_EGLM_TWS",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["BAF_L86A2_ACOG",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,693,'trade_weapons')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemRuby",1]',10,'[6,"ItemBriefcase100oz",1]','[3,"ItemBriefcase100oz",1]',0,700,'trade_items')
+
+
+
+
+
+
+
+
+
+// Harbinger
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["m107_TWS_EP1",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["BAF_AS50_TWS",3]',250,'[8,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["BAF_L85A2_RIS_CWS",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["M110_TWS_EP1",3]',250,'[2,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["M249_TWS_EP1",3]',250,'[5,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["M32_EP1",3]',250,'[6,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["m8_tws",3]',250,'[6,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["m8_tws_sd",3]',250,'[5,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["PMC_AS50_TWS",3]',250,'[1,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["PMC_AS50_scoped",3]',250,'[8,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["SCAR_H_STD_TWS_SD",3]',250,'[1,"ItemBriefcase100oz",1]','[7,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["SCAR_L_STD_EGLM_TWS",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,697,'trade_weapons'),
+('["BAF_L86A2_ACOG",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,697,'trade_weapons')
+
+// Messiah AMMO 
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["10Rnd_127x99_m107",1]',250,'[8,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,671,'trade_items'),
+('["20Rnd_762x51_B_SCAR",1]',250,'[6,"ItemSilverBar10oz",1]','[3,"ItemSilverBar10oz",1]',0,671,'trade_items'),
+('["20Rnd_B_AA12_HE",1]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["5Rnd_127x99_as50",1]',250,'[2,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["6Rnd_HE_M203",1]',250,'[5,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,671,'trade_items'),
+('["6Rnd_FlareWhite_M203",1]',250,'[6,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["1Rnd_Smoke_M203",1]',250,'[6,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["1Rnd_SmokeRed_M203",1]',250,'[5,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["1Rnd_SmokeGreen_M203",1]',250,'[1,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["6Rnd_Smoke_M203",1]',250,'[8,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["6Rnd_SmokeRed_M203",1]',250,'[1,"ItemBriefcase100oz",1]','[7,"ItemGoldBar10oz",1]',0,671,'trade_items'),
+('["6Rnd_SmokeYellow_M203",1]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,671,'trade_items')
+
+// Harbinger Ammo
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["10Rnd_127x99_m107",1]',250,'[8,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,694,'trade_items'),
+('["20Rnd_762x51_B_SCAR",1]',250,'[6,"ItemSilverBar10oz",1]','[3,"ItemSilverBar10oz",1]',0,694,'trade_items'),
+('["20Rnd_B_AA12_HE",1]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["5Rnd_127x99_as50",1]',250,'[2,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["6Rnd_HE_M203",1]',250,'[5,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,694,'trade_items'),
+('["6Rnd_FlareWhite_M203",1]',250,'[6,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["1Rnd_Smoke_M203",1]',250,'[6,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["1Rnd_SmokeRed_M203",1]',250,'[5,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["1Rnd_SmokeGreen_M203",1]',250,'[1,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["6Rnd_Smoke_M203",1]',250,'[8,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["6Rnd_SmokeRed_M203",1]',250,'[1,"ItemBriefcase100oz",1]','[7,"ItemGoldBar10oz",1]',0,694,'trade_items'),
+('["6Rnd_SmokeYellow_M203",1]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,694,'trade_items')
+
+
+// Messiah Items
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemTrashToiletpaper",1]',250,'[5,"ItemGoldBar",1]','[4,"ItemGoldBar",1]',0,696,'trade_items'),
+('["PartOreGold",1]',250,'[6,"ItemGoldBar",1]','[4,"ItemSilverBar10oz",1]',0,696,'trade_items')
+
+// Harbinger Items
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["PartOreGold",1]',0,'[7,"ItemGoldBar",1]','[7,"ItemGoldBar",1]',0,799,'trade_items')
+
+
+m107_TWS_EP1
+AA12_PMC
+BAF_AS50_TWS
+BAF_L110A1_Aim
+BAF_L7A2_GPMG
+BAF_L85A2_RIS_CWS
+M110_TWS_EP1
+M249_TWS_EP1
+M32_EP1
+M4A1_HWS_GL_camo
+M4A1_HWS_GL_SD_Camo
+M4A1_RCO_GL
+M4A3_RCO_GL_EP1
+m8_compact_pmc
+m8_tws
+m8_tws_sd
+Mk13_EP1
+PMC_AS50_TWS
+PMC_AS50_scoped
+SCAR_H_STD_TWS_SD
+SCAR_L_STD_EGLM_TWS
+BAF_L86A2_ACOG
+m8_carbineGL
+m8_carbine_pmc
+Sa58V_CCO_EP1
+
+
+10Rnd_127x99_m107 
+20Rnd_762x51_B_SCAR
+20Rnd_B_AA12_HE
+5Rnd_127x99_as50 
+30Rnd_545x39_AKSD
+
+
+1Rnd_HE_M203
+FlareWhite_M203
+FlareGreen_M203
+FlareRed_M203
+FlareYellow_M203
+1Rnd_Smoke_M203
+1Rnd_SmokeRed_M203
+1Rnd_SmokeGreen_M203
+1Rnd_SmokeYellow_M203
+
+
+6Rnd_HE_M203
+6Rnd_FlareWhite_M203
+6Rnd_FlareGreen_M203
+6Rnd_FlareRed_M203
+6Rnd_FlareYellow_M203
+6Rnd_Smoke_M203
+6Rnd_SmokeRed_M203
+6Rnd_SmokeGreen_M203
+6Rnd_SmokeYellow_M203 
+
+
+
+Traveling Trader
+------------------------------
+
+["Traveling Supplies",699],["Gems",700],["Traveling Sales",795],["Traveling Kits",701]
+
+
+ChainSawB 
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES ('["ChainSawB",3]',0,'[5,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,795,'trade_weapons');
+
+
+Traveling Supplies
+------------------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["PartOreGold",1]',250,'[9,"ItemGoldBar",1]','[8,"ItemGoldBar",1]',0,699,'trade_items'),
+('["PartOreSilver",1]',250,'[3,"ItemGoldBar",1]','[3,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemZombieParts",1]',250,'[4,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["ItemTrashRazor",1]',250,'[4,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["ItemTrashToiletpaper",1]',250,'[3,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["ItemKiloHemp",1]',250,'[9,"ItemGoldBar10oz",1]','[8,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["ItemSodaRabbit",1]',250,'[8,"ItemGoldBar",1]','[6,"ItemGoldBar",1]',0,699,'trade_items')
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["PartOre",1]',0,'[5,"ItemGoldBar",1]','[5,"ItemGoldBar",1]',0,699,'trade_items');
+
+
+
+
+- Kostey_photos, Cobalt_File, Kostey_map_case, Kostey_notebook, Moscow_Bombing_File, Laserdesignator
+
+- Laserbatteries
+
+
+
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["Kostey_photos",3]',0,'[8,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,699,'trade_weapons'),
+('["Kostey_map_case",3]',0,'[8,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,699,'trade_weapons'),
+('["Kostey_notebook",3]',0,'[8,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,699,'trade_weapons'),
+('["Moscow_Bombing_File",3]',0,'[8,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,699,'trade_weapons'),
+('["Laserdesignator",3]',0,'[8,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,699,'trade_weapons'),
+('["Laserbatteries",1]',0,'[1,"ItemBriefcase100oz",1]','[1,"ItemBriefcase100oz",1]',0,699,'trade_items'),
+('["Cobalt_File",3]',0,'[8,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,699,'trade_weapons');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["PartWoodLumber",1]',0,'[5,"ItemGoldBar",1]','[4,"ItemGoldBar",1]',0,702,'trade_items')
+
+
+
+('["CinderBlocks",1]',40,'[3,"ItemGoldBar",1]','[1,"ItemGoldBar",1]',0,702,'trade_items')
+
+
+
+
+
+// Traveling Kits
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemScaffoldingKit",1]',250,'[9,"ItemGoldBar",1]','[8,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemGenerator",1]',250,'[6,"ItemGoldBar10oz",1]','[5,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["outhouse_kit",1]',250,'[1,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["sun_shade_kit",1]',250,'[4,"ItemGoldBar",1]','[3,"ItemGoldBar",1]',0,699,'trade_items'),
+('["stick_fence_kit",1]',250,'[3,"ItemGoldBar",1]','[1,"ItemGoldBar",1]',0,699,'trade_items'),
+('["fuel_pump_kit",1]',250,'[8,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["forest_net_kit",1]',250,'[1,"ItemGoldBar10oz",1]','[8,"ItemGoldBar",1]',0,699,'trade_items'),
+('["forest_large_net_kit",1]',250,'[1,"ItemGoldBar10oz",1]','[5,"ItemGoldBar",1]',0,699,'trade_items'),
+('["deer_stand_kit",1]',250,'[5,"ItemGoldBar",1]','[4,"ItemGoldBar",1]',0,699,'trade_items'),
+('["metal_panel_kit",1]',250,'[3,"ItemGoldBar",1]','[1,"ItemGoldBar",1]',0,699,'trade_items'),
+('["wood_ramp_kit",1]',250,'[3,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["wood_shack_kit",1]',250,'[1,"ItemGoldBar10oz",1]','[6,"ItemGoldBar",1]',0,699,'trade_items'),
+('["workbench_kit",1]',250,'[3,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemFireBarrel_kit",1]',250,'[1,"ItemGoldBar10oz",1]','[6,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemWoodCrateKit",1]',250,'[3,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemGunRackKit",1]',250,'[3,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,699,'trade_items'),
+('["cinder_wall_kit",1]',250,'[1,"ItemGoldBar10oz",1]','[8,"ItemGoldBar",1]',0,699,'trade_items'),
+('["cinder_door_kit",1]',250,'[2,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["metal_floor_kit",1]',250,'[8,"ItemGoldBar",1]','[7,"ItemGoldBar",1]',0,699,'trade_items'),
+('["cinder_garage_kit",1]',250,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["ItemWoodFloor",1]',250,'[3,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemWoodFloorHalf",1]',250,'[3,"ItemGoldBar",1]','[2,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemWoodFloorQuarter",1]',250,'[3,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,699,'trade_items'),
+('["ItemWoodStairs",1]',250,'[4,"ItemGoldBar",1]','[3,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemWoodStairsSupport",1]',250,'[5,"ItemGoldBar",1]','[3,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemWoodWallDoor",1]',250,'[7,"ItemGoldBar",1]','[5,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemWoodWallWithDoor",1]',250,'[5,"ItemGoldBar",1]','[4,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemWoodWallGarageDoor",1]',250,'[8,"ItemGoldBar",1]','[7,"ItemGoldBar",1]',0,699,'trade_items'),
+('["ItemComboLock",1]',250,'[2,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,699,'trade_items')
+// ADDED AFTER
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["6Rnd_FlareWhite_M203",1]',250,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,699,'trade_items')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemTopaz",1]',250,'[4,"ItemGoldBar",1]','[3,"ItemGoldBar",1]',0,700,'trade_items'),
+('["ItemObsidian",1]',250,'[5,"ItemGoldBar",1]','[4,"ItemGoldBar",1]',0,700,'trade_items'),
+('["ItemSapphire",1]',250,'[7,"ItemGoldBar10oz",1]','[6,"ItemGoldBar10oz",1]',0,700,'trade_items'),
+('["ItemAmethyst",1]',250,'[8,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,700,'trade_items'),
+('["ItemEmerald",1]',250,'[1,"ItemBriefcase100oz",1]','[8,"ItemGoldBar10oz",1]',0,700,'trade_items'),
+('["ItemCitrine",1]',250,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,700,'trade_items'),
+('["ItemRuby",1]',250,'[2,"ItemBriefcase100oz",1]','[1,"ItemBriefcase100oz",1]',0,700,'trade_items')
+
+
+
+PartOreGold
+PartOreSilver
+ItemZombieParts
+ItemTrashRazor
+ItemTrashToiletpaper
+ItemKiloHemp
+
+cinder_wall_kit
+cinder_door_kit
+metal_floor_kit
+cinder_garage_kit
+ItemWoodFloor
+ItemWoodFloorHalf
+ItemWoodFloorQuarter
+ItemWoodStairs
+ItemWoodStairsSupport
+ItemWoodWall
+ItemWoodWallDoor    
+ItemWoodWallWithDoor
+ItemWoodWallGarageDoor
+ItemScaffoldingKit
+ItemGenerator
+outhouse_kit
+sun_shade_kit
+wood_shack_kit
+stick_fence_kit
+light_pole_kit
+fuel_pump_kit
+forest_net_kit
+forest_large_net_kit
+deer_stand_kit
+metal_panel_kit
+wood_ramp_kit
+workbench_kit
+ItemFireBarrel_kit
+ItemWoodCrateKit
+ItemGunRackKit
+ItemComboLock
+
+ItemSodaRabbit
+
+ItemTopaz
+ItemObsidian
+ItemSapphire
+ItemAmethyst
+ItemEmerald
+ItemCitrine
+ItemRuby
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemRuby",2]',250,'[5,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["ItemSaphire",2]',250,'[6,"ItemRuby",1]','[3,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["T72_INS",2]',250,'[2,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["ZSU_INS",2]',250,'[4,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["BMP2_CDF",2]',250,'[3,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old')
+
+
+
+
+
+KLEN ARMED VECHILES
+-------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["HMMWV_Armored",2]',250,'[1,"ItemBriefcase100oz",1]','[1,"ItemGoldBar10oz",1]',0,789,'trade_any_vehicle'),
+('["BRDM2_GUE",2]',250,'[12,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,789,'trade_any_vehicle'),
+('["Offroad_DSHKM_Ins",2]',250,'[6,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,789,'trade_any_vehicle'),
+('["LandRover_MG_TK_INS_EP1",2]',250,'[8,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,789,'trade_any_vehicle'),
+('["LandRover_SPG9_TK_INS_EP1",2]',250,'[10,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,789,'trade_any_vehicle'),
+('["UAZ_AGS30_TK_EP1",2]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,789,'trade_any_vehicle')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["Offroad_SPG9_Gue",2]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,789,'trade_any_vehicle'),
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemCopperBar10oz",2]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,793,'trade_any_vehicle')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["BMP3",2]',250,'[5,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["M1Abrams",2]',250,'[6,"ItemRuby",1]','[3,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["T72_INS",2]',250,'[2,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["ZSU_INS",2]',250,'[4,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old'),
+('["BMP2_CDF",2]',250,'[3,"ItemRuby",1]','[2,"ItemRuby",1]',0,793,'trade_any_vehicle_old')
+
+
+
+
+STARY ARMED VECHILES
+-------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["HMMWV_Armored",2]',250,'[1,"ItemBriefcase100oz",1]','[1,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle'),
+('["BRDM2_GUE",2]',250,'[12,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,792,'trade_any_vehicle'),
+('["Offroad_DSHKM_Ins",2]',250,'[6,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle'),
+('["LandRover_MG_TK_INS_EP1",2]',250,'[7,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle'),
+('["LandRover_SPG9_TK_INS_EP1",2]',250,'[7,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle'),
+('["HMMWV_TOW_DES_EP1",2]',250,'[1,"ItemBriefcase100oz",1]','[2,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle'),
+('["HMMWV_M998_crows_M2_DES_EP1",2]',250,'[3,"ItemBriefcase100oz",1]','[2,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle'),
+('["BAF_Jackal2_L2A1_w",2]',250,'[2,"ItemBriefcase100oz",1]','[4,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle'),
+('["LandRover_Special_CZ_EP1",2]',250,'[8,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,792,'trade_any_vehicle')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["M113Ambul_UN_EP1",2]',250,'[3,"ItemBriefcase100oz",1]','[2,"ItemBriefcase100oz",1]',0,703,'trade_any_vehicle'),
+
+
+
+
+STARY GUNS
+--------------------------------------------
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["M249_DZ",3]',250,'[2,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,603,'trade_weapons')
+
+
+
+
+BANDIT AND HERO
+-----------------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["BTR90_DZ",2]',3,'[12,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,569,'trade_any_vehicle'),('["BTR90_DZ",2]',3,'[9,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,562,'trade_any_vehicle')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["BAF_Jackal2_L2A1_w",2]',3,'[1,"ItemBriefcase100oz",1]','[6,"ItemGoldBar10oz",1]',0,569,'trade_any_vehicle'),('["BTR60_TK_EP1",2]',3,'[7,"ItemBriefcase100oz",1]','[8,"ItemGoldBar10oz",1]',0,569,'trade_any_vehicle'),
+('["BRDM2_TK_EP1",2]',3,'[9,"ItemBriefcase100oz",1]','[8,"ItemGoldBar10oz",1]',0,569,'trade_any_vehicle')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["BAF_Jackal2_L2A1_w",2]',3,'[4,"ItemBriefcase100oz",1]','[6,"ItemGoldBar10oz",1]',0,562,'trade_any_vehicle'),('["BTR60_TK_EP1",2]',3,'[7,"ItemBriefcase100oz",1]','[8,"ItemGoldBar10oz",1]',0,562,'trade_any_vehicle'),
+('["BRDM2_TK_EP1",2]',3,'[9,"ItemBriefcase100oz",1]','[8,"ItemGoldBar10oz",1]',0,562,'trade_any_vehicle')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["Ural_ZU23_INS",2]',3,'[5,"ItemBriefcase100oz",1]','[3,"ItemGoldBar10oz",1]',0,562,'trade_any_vehicle')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["Mi171Sh_rockets_CZ_EP1",2]',3,'[6,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,493,'trade_any_vehicle'),
+VALUES('["Ka60_GL_PMC",2]',3,'[5,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,493,'trade_any_vehicle')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["UH1H_DZ",2]',3,'[1,"ItemBriefcase100oz",1]','[6,"ItemGoldBar10oz",1]',0,782,'trade_any_vehicle')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+VALUES('["AAV",2]',3,'[5,"ItemBriefcase100oz",1]','[2,"ItemGoldBar10oz",1]',0,569,'trade_any_vehicle')
+
+
+20Rnd_762x51_B_SCAR - 577
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["20Rnd_762x51_B_SCAR",1]',250,'[7,"ItemGoldBar",1]','[3,"ItemGoldBar",1]',0,577,'trade_items')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["20Rnd_762x51_B_SCAR",1]',250,'[7,"ItemGoldBar",1]','[3,"ItemGoldBar",1]',0,577,'trade_items')
+
+
+
+
+
+HERO TANKS - 793
+--------------------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) 
+('["M6_EP1",2]',3,'[7,"ItemRuby",1]','[2,"ItemRuby",1]',0,796,'trade_any_vehicle_old')
+
+
+
+
+Hero Weapons - 477 / Bandit Weapons- 693
+-----------------------------------------------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["AKS_74_GOSHAWK",3]',5,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons')
+
+
+
+('["SCAR_H_CQC_CCO_SD",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_H_LNG_Sniper_SD",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_CQC",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_H_STD_EGLM_Spect",3]',250,'[7,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_CQC_CCO_SD",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_CQC_EGLM_Holo",3]',250,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_CQC_Holo",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_STD_EGLM_RCO",3]',250,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_STD_HOLO",3]',250,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,693,'trade_weapons'),
+('["SCAR_L_STD_Mk4CQT",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,693,'trade_weapons')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["SCAR_H_CQC_CCO",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_H_CQC_CCO_SD",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_H_LNG_Sniper_SD",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_L_CQC",3]',250,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_H_STD_EGLM_Spect",3]',250,'[7,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_L_CQC_CCO_SD",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_L_CQC_EGLM_Holo",3]',250,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_L_CQC_Holo",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_L_STD_EGLM_RCO",3]',250,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["SCAR_L_STD_HOLO",3]',250,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,477,'trade_weapons'),
+('["RPK_74",3]',250,'[5,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,477,'trade_weapons')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["Stinger",3]',250,'[10,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,477,'trade_weapons')
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["RPK_74",3]',250,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,638,'trade_weapons'),
+('["BAF_L86A2_ACOG",3]',250,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,486,'trade_weapons'),
+('["BAF_L86A2_ACOG",3]',250,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,603,'trade_weapons'),
+('["BAF_L86A2_ACOG",3]',250,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,610,'trade_weapons')
+
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["Stinger",1]',250,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,577,'trade_items')
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["DMR_DZ",3]',250,'[9,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,477,'trade_weapons')
+
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["Javelin",1]',10,'[5,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,529,'trade_items'),
+('["Javelin",3]',10,'[8,"ItemGoldBar10oz",1]','[4,"ItemGoldBar10oz",1]',0,526,'trade_weapons')
+
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["MAAWS",1]',10,'[4,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,529,'trade_items'),
+('["MAAWS",3]',10,'[6,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,526,'trade_weapons')
+
+
+
+
+
+STARY BLACK MARKET TRADER
+-------------------------
+
+
+
+
+Explosives
+-------------------------
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["RPG7V",1]',3,'[9,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,529,'trade_items')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["TimeBomb",1]',1,'[3,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,529,'trade_items')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["PG-7VL",1]',1,'[4,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,529,'trade_items')
+
+PG-7VL
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["RPG7V",1]',3,'[9,"ItemGoldBar10oz",1]','[7,"ItemGoldBar10oz",1]',0,529,'trade_items')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["30Rnd_545x39_AKSD",1]',10,'[1,"ItemGoldBar",1]','[1,"ItemGoldBar",1]',0,529,'trade_items')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["AKS_GOLD",3]',250,'[4,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,526,'trade_weapons')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["BAF_LRR_scoped",3]',250,'[4,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,526,'trade_weapons')
+
+
+
+
+Food
+---------------------
+INSERT INTO `traders_data` (`id`, `item`, `qty`, `buy`, `sell`, `order`, `tid`, `afile`) VALUES
+(7847, '["ItemTuna",1]', 1481, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 790, 'trade_items'),
+(7848, '["ItemSeaBass",1]', 1118, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 790, 'trade_items'),
+(7849, '["ItemTrout",1]', 12772, '[1,"ItemGoldBar10oz",1]', '[5,"ItemGoldBar",1]', 0, 790, 'trade_items'),
+(7878, '["FoodrabbitRaw",1]', 672, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 790, 'trade_items');
+
+
+
+
+AIRCRAFT DEALER
+---------------------
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["Pchela1T",2]',3,'[1,"ItemBriefcase100oz",1]','[8,"ItemGoldBar10oz",1]',0,791,'trade_any_vehicle');
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["AN2_DZ",2]',3,'[7,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,791,'trade_any_vehicle')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["AH6J_EP1",2]',3,'[3,"ItemBriefcase100oz",1]','[9,"ItemGoldBar10oz",1]',0,782,'trade_any_vehicle')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["BAF_Apache_AH1_D",2]',3,'[4,"ItemRuby",1]','[2,"ItemRuby",1]',0,782,'trade_any_vehicle_old')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES('["F35B",2]',3,'[2,"ItemRuby",1]','[1,"ItemRuby",1]',0,783,'trade_any_vehicle')
+
+
+
+Airplane Armed - 791
+
+
+
+
+KLEN
+---------------------- 
+
+('["CinderBlocks",1]',300,'[2,"ItemGoldBar",1]','[6,"ItemSilverBar10oz",1]',0,530,'trade_items'),
+('["MortarBucket",1]',300,'[4,"ItemGoldBar",1]','[6,"ItemSilverBar10oz",1]',0,530,'trade_items'),
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["RPK_74",3]',250,'[1,"ItemGoldBar10z",1]','[6,"ItemGoldBar",1]',0,610,'trade_weapons')
+
+
+
+BUILDING SUPPLIES
+------------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["CinderBlocks",1]',10,'[1,"ItemGoldBar",1]','[1,"ItemSilverBar10oz",1]',0,662,'trade_items'),
+('["MortarBucket",1]',200,'[1,"ItemGoldBar",1]','[1,"ItemSilverBar10oz",1]',0,662,'trade_items'),
+('["PartPlywoodPack",1]',250,'[3,"ItemSilverBar10oz",1]','[3,"ItemSilverBar",1]',0,664,'trade_items'),
+('["PartPlankPack",1]',250,'[2,"ItemSilverBar10oz",1]','[2,"ItemSilverBar",1]',0,664,'trade_items'),
+('["ItemRadio",3]',250,'[2,"ItemSilverBar10oz",1]','[4,"ItemSilverBar",1]',0,510,'trade_weapons'),
+('["ItemRadio",3]',250,'[2,"ItemSilverBar10oz",1]','[4,"ItemSilverBar",1]',0,532,'trade_weapons'),
+('["ItemRadio",3]',250,'[2,"ItemSilverBar10oz",1]','[4,"ItemSilverBar",1]',0,663,'trade_weapons'),
+('["ItemComboLock",1]',250,'[3,"ItemGoldBar10oz",1]','[1,"ItemSilverBar",1]',0,662,'trade_items'),
+('["ItemComboLock",1]',250,'[2,"ItemGoldBar10oz",1]','[1,"ItemGoldBar10oz",1]',0,530,'trade_items'),
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["CinderBlocks",1]',10,'[1,"ItemGoldBar",1]','[1,"ItemSilverBar10oz",1]',0,662,'trade_items')
+
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ItemGenerator",1]',10,'[9,"ItemGoldBar",1]','[1,"ItemSilverBar10oz",1]',0,662,'trade_items'),
+('["ItemWoodPile",1]',200,'[5,"ItemSilverBar",1]','[1,"ItemSilverBar",1]',0,662,'trade_items'),
+('["ItemFuelBarrelEmpty",1]',250,'[5,"ItemGoldBar",1]','[9,"ItemSilverBar10oz",1]',0,664,'trade_items'),
+('["PartWoodLumber",1]',250,'[5,"ItemSilverBar10oz",1]','[3,"ItemSilverBar",1]',0,664,'trade_items')
+
+
+
+BASH
+---------------------------------------------
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["BAF_LRR_scoped",3]',10,'[6,"ItemGoldBar10oz",1]','[3,"ItemGoldBar10oz",1]',0,526,'trade_weapons'),
+('["BAF_LRR_scoped_W",3]',10,'[8,"ItemGoldBar10oz",1]','[5,"ItemGoldBar10oz",1]',0,526,'trade_weapons')
+
+INSERT INTO `Traders_DATA` (`item`,`qty`,`buy`,`sell`,`order`,`tid`,`afile`) VALUES
+('["ChainSawP",1]',10,'[4,"ItemGoldBar10oz",1]','[2,"ItemGoldBar10oz",1]',0,508,'trade_items')

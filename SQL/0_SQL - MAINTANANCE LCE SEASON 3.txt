@@ -1,0 +1,212 @@
+delete FROM `Character_DATA` USING Character_DATA, Character_DATA AS tmpcharacter_data WHERE NOT Character_DATA.CharacterID=tmpcharacter_data.CharacterID AND Character_DATA.CharacterID<tmpcharacter_data.CharacterID AND (Character_DATA.PlayerUID=tmpcharacter_data.PlayerUID)
+
+UPDATE `traders_data` SET qty=10 WHERE `qty` < 10;
+
+
+UPDATE `traders_data` SET qty=125 WHERE `item` LIKE '%MortarBucket%' AND `qty` < 20
+
+DELETE FROM object_data WHERE Damage = 1
+
+DELETE FROM `object_data` WHERE `Damage` > .3;
+
+SELECT * FROM `object_data` WHERE `Damage` > .4;
+
+*************************************************************************************************************************
+
+MMT_Civ
+
+DELETE FROM `object_data` WHERE (Classname LIKE '%TT650_Civ%');
+
+hilux1_civil_1_open
+
+SELECT * FROM `object_data` WHERE (Classname LIKE '%SandNest_DZ%');
+
+
+GNT_C185U
+GLT_M300_ST
+ATV_CZ_EP1
+GLT_M300_LT
+HMMWV_Armored
+hilux1_civil_1_open
+TT650_Civ
+SandNest_DZ
+ATV_CZ_EP1
+
+
+UPDATE `Traders_DATA` SET `buy`= '[2,"ItemGoldBar",1]' WHERE `buy`='[6,"ItemSilverBar10oz",1]';
+
+UPDATE `Traders_DATA` SET `sell`= '[1,"ItemGoldBar",1]' WHERE `sell`='[1,"ItemSilverBar10oz",1]';
+
+UPDATE `Traders_DATA` SET `buy`= '[1,"ItemSilverBar10oz",1]' WHERE `buy`='[1,"ItemGoldBar",1]';
+UPDATE `Traders_DATA` SET `buy`= '[1,"ItemGoldBar",1]' WHERE `buy`='[5,"ItemSilverBar10oz",1]';
+UPDATE `Traders_DATA` SET `buy`= '[1,"ItemGoldBar",1]' WHERE `buy`='[3,"ItemSilverBar10oz",1]';
+UPDATE `Traders_DATA` SET `buy`= '[1,"ItemGoldBar",1]' WHERE `buy`='[9,"ItemSilverBar10oz",1]';
+
+UPDATE `Traders_DATA` SET `sell`= '[1,"ItemSilverBar10oz",1]' WHERE `sell`='[1,"ItemGoldBar",1]';
+
+SELECT * FROM 
+`object_data` 
+WHERE `Classname` 
+NOT REGEXP 'land|storage|shed|bench|wall|floor|fence|pump|wood|hrescue|stick|pole|generator|panel|house|rack|bag|stand|barrel|canvas|wire|hedgehog|net|trap|ramp|fort';
+
+
+
+//
+// EVENTS
+//
+
+-- ----------------------------
+-- Event structure for CharacterDataCleanUp
+-- ----------------------------
+DROP EVENT IF EXISTS `CharacterDataCleanUp`;
+DELIMITER ;;
+CREATE EVENT `CharacterDataCleanUp` ON SCHEDULE EVERY 1 DAY COMMENT 'Cleans up old CharacterData' DO DELETE FROM `Character_DATA` USING Character_DATA, Character_DATA AS tmpcharacter_data WHERE NOT Character_DATA.CharacterID=tmpcharacter_data.CharacterID AND Character_DATA.CharacterID<tmpcharacter_data.CharacterID AND (Character_DATA.PlayerUID=tmpcharacter_data.PlayerUID)
+;;
+DELIMITER ;
+
+
+
+
+
+--
+-- http://dayzepoch.com/wiki/index.php?title=Server_Installation_Instructions_Extended
+--
+
+-- ----------------------------
+-- Function structure for FindVehicleKeysCount
+-- ----------------------------
+DROP FUNCTION IF EXISTS `FindVehicleKeysCount`;
+DELIMITER ;;
+CREATE FUNCTION `FindVehicleKeysCount`(`keyId` INT) RETURNS int(11)
+BEGIN
+    DECLARE totalKeys INT DEFAULT 0;
+    DECLARE keyName VARCHAR(32) DEFAULT "";
+    DECLARE keysInChar INT DEFAULT 0;
+    DECLARE keysInObj INT DEFAULT 0;
+
+    SET keyName = (CASE
+        WHEN `keyId` < 2501 THEN CONCAT('ItemKeyGreen', `keyId`)
+        WHEN `keyId` < 5001 THEN CONCAT('ItemKeyRed', `keyId` - 2500)
+        WHEN `keyId` < 7501 THEN CONCAT('ItemKeyBlue', `keyId` - 5000)
+        WHEN `keyId` < 10001 THEN CONCAT('ItemKeyYellow', `keyId` - 7500)
+        WHEN `keyId` < 12501 THEN CONCAT('ItemKeyBlack', `keyId` - 10000)
+        ELSE 'ERROR'
+    END);
+
+    SET keysInChar = (SELECT COUNT(*) FROM `Character_DATA` WHERE `Alive` = '1' AND (`Inventory` LIKE CONCAT('%', keyName, '%') OR `Backpack` LIKE CONCAT('%', keyName, '%')));
+    SET keysInObj = (SELECT COUNT(*) FROM `object_data` WHERE `Inventory` LIKE CONCAT('%', keyName, '%'));
+
+    RETURN (keysInChar + keysInObj);
+END
+;;
+DELIMITER ;
+
+
+DROP FUNCTION IF EXISTS `CharacterDataCleanUp`;
+DELIMITER ;;
+CREATE FUNCTION `CharacterDataCleanUp`() RETURNS int(11)
+BEGIN
+	delete FROM `Character_DATA` USING Character_DATA, Character_DATA AS tmpcharacter_data WHERE NOT Character_DATA.CharacterID=tmpcharacter_data.CharacterID AND Character_DATA.CharacterID<tmpcharacter_data.CharacterID AND (Character_DATA.PlayerUID=tmpcharacter_data.PlayerUID)
+END
+;;
+DELIMITER ;
+
+
+
+
+-- ----------------------------
+-- Function structure for DeleteNonKeyVehicles
+-- Example usage: SELECT DeleteNonKeyVehicles();
+-- ----------------------------
+DROP FUNCTION IF EXISTS `DeleteNonKeyVehicles`;
+DELIMITER ;;
+CREATE FUNCTION `DeleteNonKeyVehicles`() RETURNS int(11)
+BEGIN
+	DELETE FROM
+		`object_data`
+	WHERE
+		`object_data`.`CharacterID` <> 0
+		AND `object_data`.`CharacterID` <= 12500
+		AND `object_data`.`Classname` NOT LIKE 'Tent%'
+		AND `object_data`.`Classname` NOT LIKE '%Locked'
+		AND `object_data`.`Classname` NOT LIKE 'Land%'
+		AND `object_data`.`Classname` NOT LIKE 'Cinder%'
+		AND `object_data`.`Classname` NOT LIKE 'Wood%'
+		AND `object_data`.`Classname` NOT LIKE 'Metal%'
+		AND `object_data`.`Classname` NOT LIKE '%Storage%'
+		AND `object_data`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ')
+		AND FindVehicleKeysCount(object_data.CharacterID) = 0;
+
+	RETURN ROW_COUNT();
+END
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Event structure for removeDamagedVehicles
+-- ----------------------------
+DROP EVENT IF EXISTS `removeDamagedVehicles`;
+DELIMITER ;;
+CREATE EVENT `removeDamagedVehicles` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes damaged vehicles' DO DELETE FROM `object_data` WHERE Damage > .5
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Event structure for removeObjectEmpty
+-- ----------------------------
+DROP EVENT IF EXISTS `removeObjectEmpty`;
+DELIMITER ;;
+CREATE EVENT `removeObjectEmpty` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes abandoned storage objects and vehicles' DO DELETE FROM `object_data` WHERE `LastUpdated` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 14 DAY) AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 24 DAY) AND ( (`Inventory` IS NULL) OR (`Inventory` = '[]') OR (`Inventory` = '[[[],[]],[[],[]],[[],[]]]') )
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Event structure for removeObjectOld
+-- ----------------------------
+DROP EVENT IF EXISTS `removeObjectOld`;
+DELIMITER ;;
+CREATE EVENT `removeObjectOld` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes old objects and vehicles' DO DELETE FROM `object_data` WHERE `LastUpdated` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 6 DAY)
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Event structure for setDamageOnAge
+-- ----------------------------
+DROP EVENT IF EXISTS `setDamageOnAge`;
+DELIMITER ;;
+CREATE EVENT `setDamageOnAge` ON SCHEDULE EVERY 1 DAY COMMENT 'This sets damage on a wall so that it can be maintained' DO UPDATE `object_data` SET `Damage`=0.1 WHERE `ObjectUID` <> 0 AND `CharacterID` <> 0 AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 3 DAY) AND ( (`Inventory` IS NULL) OR (`Inventory` = '[]') )
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Event structure for updateStockDaily
+-- ----------------------------
+DROP EVENT IF EXISTS `updateStockDaily`;
+DELIMITER ;;
+CREATE EVENT `updateStockDaily` ON SCHEDULE EVERY 1 DAY COMMENT 'Updates out of stock vendors' DO UPDATE `Traders_DATA` SET qty=20 WHERE qty=0 AND afile<>'trade_any_vehicle' AND afile<>'trade_any_boat'
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Event structure for UnlockNonKeyVehicles
+-- ----------------------------
+DROP EVENT IF EXISTS `UnlockNonKeyVehicles`;
+DELIMITER ;;
+CREATE EVENT `UnlockNonKeyVehicles` ON SCHEDULE EVERY 1 DAY DO UPDATE
+			`object_data`
+		SET
+			`object_data`.`CharacterID` = 0
+		WHERE
+			`object_data`.`CharacterID` <> 0
+			AND `object_data`.`CharacterID` <= 12500
+			AND `object_data`.`Classname` NOT LIKE 'Tent%'
+			AND `object_data`.`Classname` NOT LIKE '%Locked'
+			AND `object_data`.`Classname` NOT LIKE 'Land%'
+			AND `object_data`.`Classname` NOT LIKE 'Cinder%'
+			AND `object_data`.`Classname` NOT LIKE 'Wood%'
+			AND `object_data`.`Classname` NOT LIKE 'Metal%'
+			AND `object_data`.`Classname` NOT LIKE '%Storage%'
+			AND `object_data`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ')
+			AND FindVehicleKeysCount(object_data.CharacterID) = 0
+;;
+DELIMITER ;
