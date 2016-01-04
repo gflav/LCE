@@ -8,7 +8,7 @@
 DZMSMissHumanity = true;
 
 // How Much Humanity?
-DZMSCntHumanity = 210;
+DZMSCntHumanity = 60;
 
 // Do You Want AI to use NVGs?
 //(They are deleted on death)
