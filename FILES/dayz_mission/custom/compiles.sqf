@@ -9,6 +9,8 @@ if (!isDedicated) then {
     fnc_SetPitchBankYaw =       compile preprocessFileLineNumbers "custom\BuildVectors\fnc_SetPitchBankYaw.sqf";
     DZE_build_vector_file =         "custom\BuildVectors\build_vectors.sqf";
     build_vectors =                 compile preprocessFileLineNumbers DZE_build_vector_file;
+	player_switchModel = compile preprocessFileLineNumbers "custom\player_switchModel.sqf";
+	
 };
 
 // player_selectSlot = compile preprocessFileLineNumbers "custom\ui_selectSlot.sqf"; // Right click menus

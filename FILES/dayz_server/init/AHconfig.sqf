@@ -1,10 +1,21 @@
 /*
-	File: AHconfig.sqf
 	Author: Chris(tian) "infiSTAR" Lorenzen
-	Contact: infiSTAR23@gmail.com
+	Contact: infiSTAR23@gmail.com // www.infiSTAR.de
 	
 	Description:
 	Arma AntiHack & AdminTools - infiSTAR.de
+	
+	ON LINUX YOU NEED THIS PARAMETER: -profiles
+	
+	
+	______ _____  ___ ______  ______ _____ _     _____  _    _ 
+	| ___ \  ___|/ _ \|  _  \ | ___ \  ___| |   |  _  || |  | |
+	| |_/ / |__ / /_\ \ | | | | |_/ / |__ | |   | | | || |  | |
+	|    /|  __||  _  | | | | | ___ \  __|| |   | | | || |/\| |
+	| |\ \| |___| | | | |/ /  | |_/ / |___| |___\ \_/ /\  /\  /
+	\_| \_\____/\_| |_/___/   \____/\____/\_____/\___/  \/  \/ 
+	
+	Don't forget to read the readme.txt
 	-
 	Make sure to have proper settings!
 */
@@ -20,25 +31,37 @@
 /*  SUPER ADMIN HERE      */ _SAdmins = ["0","0","0"]; //do not have a , at the end.
 /*  BANNED UIDs HERE      */ _BLOCKED = ["0","0","0"]; //do not have a , at the end.
 
+/*  HEADLESS ClIENT UIDs  */ _HEADLESS_CLIENT_UIDs = ["0","0","0"]; //do not have a , at the end.
+
 /*  Use Player White-list */ _UPW = false;	/* true or false */
 /*  WHITELIST UIDs HERE   */ _WHITELIST = ["0","0","0"]; //do not have a , at the end.
 /* ********************************************************************************* */
-/*  Top esc menu TXT      */ _TopOfESC = "DayZ Epoch"; //do not use " in this text.
-/*  Bottom esc menu TXT   */ _LowerTop = "Last Chance Epoch"; //do not use " in this text.
-/*  Bottom esc menu TXT2  */ _LowerBottom = "by Oktobergaming"; //do not use " in this text.
-/*  Color esc menu TXT    */ _EscColor = [1,1,1,1];
-/*  DebugMonitor TXT      */ _BottomDebug = "TS: 198.50.214.49:23057"; //do not use " in this text.
+/*  Top esc menu TXT      */ _TopOfESC = "DayZ Server"; //do not use " in this text.
+/*  Bottom esc menu TXT   */ _LowerTop = "AntiHack / AdminTool"; //do not use " in this text.
+/*  Bottom esc menu TXT2  */ _LowerBottom = "by infiSTAR.de"; //do not use " in this text.
+/*  Color esc menu TXT    */ _EscColor = [0.6,0,0,1];
+/*  DebugMonitor TXT      */ _BottomDebug = "infiSTAR.de"; //do not use " in this text.
 /*  DebugMonitor Key      */ _ODK =  0xCF;	/* google DIK_KeyCodes (0xCF is END) */
 /*  Use DebugMonitor      */ _DMS =  true;	/* true or false */	/* starts up with debugmonitor ON if true */
 /*  DebugMonitor Action   */ _DMW = false;	/* true or false */	/* "Debug" option on mousewheel */
 /*  Mod EPOCH ?           */ _MEH =  true;	/* true or false */
 /* ********************************************************************************* */
-/*  Use Loaded Check(s)   */ _AHL = false;	/* true or false */	/* "AH NOT LOADED ON PLAYER" */
-/*  _timedif for _AHL     */ _TDI =    65;	/*   45 - 300   */	/* only used if "_AHL = true;" -> takes longer to detect if the AH is loaded on a player or not. */
+/*
+	Your server is getting attacked by local explosions? well on scriptbase we can not do much against that besides blocking the damage from it.
+	below you will find an array of damage sources from what the damage will be blocked
+*/
+_blockDamageFrom = [
+	''	
+];
 
-/*  titleText & cutText   */ _TCT =  false;	/* true or false */	/* block titleText & cutText - some A.I. Missions and other mass message scripts needs this set to false */
+/*  _timedif for _AHL     */ _TDI =    130;	/*   45 - 300   */	/* only used if "_AHL = true;" -> takes longer to detect if the AH is loaded on a player or not. */
+/*  Use Loaded Check(s)   */ _AHL = true;	/* true or false */	/* "AH NOT LOADED ON PLAYER" */
+
+/*  revert onEachFrame    */ _REF =  true;	/* true or false */
+/*  titleText & cutText   */ _TCT =  true;	/* true or false */	/* block titleText & cutText - some A.I. Missions and other mass message scripts needs this set to false */
 /*  unitRecoil checks     */ _URC =  false;	/* true or false */	/* checks unitRecoilCoefficient and resets default unitRecoilCoefficient */
-/*  Log Bad Keys pressed  */ _LBK = false;	/* true or false */
+/*  Log Bad Keys pressed  */ _LBK = false;	/* true or false */	/* will be logged to surveillancelog.. can become huge spam I would have it disabled */
+/*  Punish Forbidden Keys */ _PBK =  false;	/* true or false */	/* will freeze the user on BadKey click for ~3 seconds! */
 /*  Forbid VON Sidechat   */ _VON =  true;	/* true or false */	/* talking on sidechat will put out a warning and kick if continue */
 /*  Use Chat Functions    */ _UCF =  true;	/* true or false */	/* Enables Chatfunctions like /dance */
 
@@ -48,27 +71,32 @@
 /*  Vehicle WHITELIST     */ _UVW = false;	/* true or false */	/* if false - _ALLOWED_Vehicles won't not be used */
 /*  Vehicle Tradercheck   */ _VTC =  false;	/* true or false */	/* checks if a player is near a trader when 'purchasing' a vehicle */
 
-/*  Cheatengine Checks ?  */ _UCC =  true;	/* true or false */	/* certain strings have been changed */
+/*  Cheatengine Checks ?  */ _UCC =  false;	/* true or false */	/* certain strings have been changed */
 /*  Use FileScan ?        */ _UFS =  true;	/* true or false */	/* spams the rpt but often finds hackers */
 /*  Use Anti Teleport?    */ _UAT =  false;	/* true or false */
-/*  Use cut-scene ?       */ _UCS =  false;	/* true or false */	/* dynamicText ~ often colored, animated or used in credits */
+/*  Use cut-scene ?       */ _UCS =  true;	/* true or false */	/* dynamicText ~ often colored, animated or used in credits */
 /*  Use Damage Check ?    */ _UDC =  false;	/* true or false */	/* try to catch Hacks that change the damage value of weapons */
 
 /*  Remove "itemsAdded"   */ _RAI =  false;	/* true or false */	/* might remove items from a custom crafting system.. */
 /*  HACKED BOX Check ?    */ _CHB =  false;	/* true or false */	/* custom crates might be deleted if "Max Cargo Count" is to low */
-/*  Max Cargo Count ?     */ _MCC =  650;
+/*  Max Cargo Count ?     */ _MCC =  3000;
 
+/*  MouseMoving EH check  */ _MOH =  false;	/* true or false */	/* will say: "MouseMoving EventHandler added" - needs to be disabled for UAV scripts and such.. */
 /*  Close Dialogs ?       */ _CUD =  false;	/* true or false */	/* Closes custom Dialogs (Menus) that are not in _ALLOWED_Dialogs */
+/*  check MapSingleClick  */ _OMC =  false;	/* true or false */	/* announces: "MapSingleClick modified", if modification is found - NEEDS _MBC to be true! */
 /*  Remove Keybinds ?     */ _RCK =  false;	/* true or false */	/* Removes custom Keybinds and sets back the default ones */
-/*  Check CMDMenus ?      */ _CCM = false;	/* true or false */	/* only disable this if you know what you are doing. */
-/*  BLOCK ALL CMDMenus    */ _BCM = false;	/* true or false */	/* we don't need commandingMenus. so have this true. */
+/*  Check Keybinds ?      */ _CKD =  false;	/* true or false */	/* checks for additional keybinds.. */
+/*  Check CMDMenus ?      */ _CCM =  false;	/* true or false */	/* only disable this if you know what you are doing. I strongly recommend to use this! */
+/*  BLOCK ALL CMDMenus    */ _BCM =  false;	/* true or false */	/* we don't need commandingMenus. so have this true as well. */
 /*  Check Actions ?       */ _CSA = false;	/* true or false */	/* this checks mousewheel actions */
 /*  Force Terrain Grid ?  */ _FTG =    25;	/* 50, 25, 12.5  */	/* if set to 50 grass will be very low for better client FPS.. default is 25 */
+/*  Use Clutter check ?   */ _UBC =  false;	/* true or false */	/* BadSize: %1 - Plants and/or Clutter pbo(s) removed..! */
+/*  Log Epoch Maintain    */ _LEM =  false;	/* true or false */
 /* ********************************************************************************* */
 /*  ALLOWED Custom Dialogs "_ALLOWED_Dialogs" are only used if you have "_CUD =  true;"  */
 /*  If you want install custom scripts using dialog windows, you can add IDD numbers  */
 /*  from the custom script's desc.h file included through MPMIssions/description.ext  */
-_ALLOWED_Dialogs = [-1,106,2200,6900,6901,6902,6903,420420,41144,711194];
+_ALLOWED_Dialogs = [-1,106,2200,6900,6901,6902,6903,420420,41144,711194,666,667];
 //	-1			Epoch Safe/Lockbox Keycode UI
 //	106		Inventory (Gear)
 //	2200		Blood Test
@@ -80,12 +108,12 @@ _ALLOWED_Dialogs = [-1,106,2200,6900,6901,6902,6903,420420,41144,711194];
 //	4444		Radio Communication
 //	65431,65432,65433,65434,65440,65441,65442		R3F ARTY Lift/Tow/Transport.
 //	711194	Plot Management	(http://epochmod.com/forum/index.php?/topic/16166-release-plot-management/)
-_ALLOWED_Dialogs = _ALLOWED_Dialogs + [81000,20001,20002,20003,20004,20005,20006,118338,118339,711197,711195]; // adding some others from community addons
+_ALLOWED_Dialogs = _ALLOWED_Dialogs + [81000,88890,20001,20002,20003,20004,20005,20006,55510,55511,55514,55515,55516,55517,55518,55519,555120,118338,118339,711197,711195,76761,571113]; // adding some others from community addons
 
 /*  Player that have one of these items in their inventory will get punished!  */
 _ForbiddenItems =
 [
-	"ItemMap_Debug","ItemCore"
+	"ItemCore"
 ];
 
 /*  If "_UVC =  true;" and "_UVW =  true;" this will delete all vehicles that are not in "_ALLOWED_Vehicles"  */
@@ -162,9 +190,11 @@ _dayzActions =
 	"s_player_lockunlock","s_vehicle_lockunlock","s_player_toggleSnap","s_player_toggleSnapSelect","s_player_toggleSnapSelectPoint",
 	"s_player_evacCall","s_player_makeEvacChopper","s_player_clearEvacChopper",
 	"s_player_deploybike2","s_player_deploymoped","s_player_deploymoped2","s_player_deploymozzie","s_player_deploymozzie2",
-	"79","SP_refuel_action","SP_repair_action","SP_rearm_actions","s_player_setVectorsReset","s_player_setVectorsForward",
+	"s_player79_copyToKey","SP_refuel_action","SP_repair_action","SP_rearm_actions","s_player_setVectorsReset","s_player_setVectorsForward",
 	"s_player_setVectorsBack","s_player_setVectorsLeft","s_player_setVectorsRight","s_player_setVectors1","s_player_setVectors5","s_player_setVectors45",
-	"s_player_setVectors90","s_player_paint","DoorManagement","Entercode"
+	"s_player_setVectors90","s_player_paint","DoorManagement","Entercode","s_player_packtentinfected","s_player_debugCheck","s_player_destorytent",
+	"s_player_attach_bomb","s_player_upgradestroage","s_player_Drinkfromhands","s_player_lockhouse","s_player_unlockhouse","s_player_openGate",
+	"s_player_CloseGate","s_player_breakinhouse","s_player_setCode"
 ];
 /* ********************************************************************************* */
 	//	NEW (EXPERIMENTAL):
@@ -198,7 +228,7 @@ _dayzActions =
 		!vote day,/vote day, vote day,
 		!vote night,/vote night, vote night
 	*/
-	_UDN =  true;	/* true or false */
+	_UDN =  false;	/* true or false */
 	
 	
 	/*
@@ -206,6 +236,78 @@ _dayzActions =
 		When "_BHF =  true;" which it always should be in my opinion, then this will check if "_BHF" is persistent.
 	*/
 	_FRC =  true;	/* true or false */
+	
+	
+	
+	
+/*
+	custom Box content:
+	just an item like it is in the example with   'ItemMap'   will put the item once in the box.
+	if an array is used like the   ['ItemGPS',5]   example, well I assume you could guess what it will do.
+*/
+_SupportBox1Content =
+[
+	'ItemMap',['ItemGPS',3],'ItemWatch'
+];
+
+_SupportBox2Content =
+[
+	'ItemMap',['ItemGPS',2],'ItemWatch'
+];
+
+_SupportBox3Content =
+[
+	'ItemMap',['ItemGPS',7],'ItemWatch'
+];
+
+
+
+/*
+	custom Vault content (EPOCH ONLY), make sure to insert the Items in the right places :)
+*/
+//	Support-Vault1
+_weapons1 = [
+	[],
+	[]
+];
+_magazines1 = [
+	['30m_plot_kit', 'ItemComboLock'],
+	[2,5]
+];
+_backpack1 = [
+	[],
+	[]
+];
+
+
+//	Support-Vault2
+_weapons2 = [
+	[],
+	[]
+];
+_magazines2 = [
+	['30m_plot_kit', 'ItemComboLock'],
+	[1,3]
+];
+_backpack2 = [
+	[],
+	[]
+];
+
+
+//	Support-Vault3
+_weapons3 = [
+	[],
+	[]
+];
+_magazines3 = [
+	['30m_plot_kit', 'ItemComboLock'],
+	[5,6]
+];
+_backpack3 = [
+	[],
+	[]
+];
 /* ********************************************************************************* */
 /* *******************Developer : infiSTAR (infiSTAR23@gmail.com)******************* */
 /* **************infiSTAR Copyright®© 2011 - 2015 All rights reserved.************** */

@@ -27,28 +27,13 @@ aiKills = 1;
 diagRadio = 1;
 diagHit = 1;
 
-class CfgSounds {
-	/*
-	class nitro  {
-        name="nitro";
-        sound[]={NOS\nitro.ogg,0.9,1};
-        titles[] = {};
-    };
-    class suction  {
-        name="suction";
-        sound[]={NOS\suction.ogg,0.1,1};
-        titles[] = {};
-    };
-    class exhaustor  {
-        name="exhaustor";
-        sound[]={NOS\exhaustor.ogg,1,1};
-        titles[] = {};
-    };
-	*/
-};
 
+#include "dzgm\defines.hpp"
 
 class RscTitles {
+	
+	#include "dzgm\icons.hpp"
+
 	class BTC_Hud
 	{
 		idd = 1000;
@@ -284,13 +269,10 @@ class DayZ_loadingScreen
 	};
 };
 
-
-
-
 #include "custom\snap_pro\snappoints.hpp"
-
 
 #include "spawn\class.hpp"
 #include "spawn\halo.hpp"
 #include "spawn\spawn.hpp"
+#include "dzgm\groupManagement.hpp"
 

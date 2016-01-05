@@ -86,7 +86,7 @@ DZE_dirWithDegrees = true; //When rotating objects with Q&E, use the custom degr
 EpochEvents = [
     ["any","any","any","any",15,"bombs"],
 	["any","any","any","any",45,"weedfield"],
-	["any","any","any","any",45,"buildingsupplies"],
+	["any","any","any","any",33,"buildingsupplies"],
     ["any","any","any","any",50,"Treasure"],
     ["any","any","any","any",25,"maze"],
     ["any","any","any","any",27,"rubbletown"]  
@@ -132,6 +132,7 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
+	execVM "dzgm\init.sqf";
 	
 	// Spawn menu
 	execVM "spawn\start.sqf";

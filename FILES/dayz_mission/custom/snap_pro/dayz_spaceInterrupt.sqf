@@ -194,4 +194,17 @@ if ((_dikCode == 0x21 and (!_alt and !_ctrl)) or (_dikCode in actionKeys "User6"
 	DZE_F = true;
 };
 
+
+// Added for groups
+if (_dikCode == 0xDB) then {
+    if (tagName) then {tagName = false;titleText ["Group name tags OFF","PLAIN DOWN"];titleFadeOut 4;} else {tagName = true;titleText ["Group name tags ON","PLAIN DOWN"];titleFadeOut 4;};
+    _handled = true;
+};
+																													
+if (_dikCode in actionKeys "TacticalView") then {_handled = true;};
+
+if (_dikCode == 0xDC) then {
+    if (dialog) then {closeDialog 0;groupManagementActive = false;} else {execVM "dzgm\loadGroupManagement.sqf";};
+    _handled = true;
+};
 _handled

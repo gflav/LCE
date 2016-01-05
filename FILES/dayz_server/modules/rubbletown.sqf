@@ -217,7 +217,7 @@ publicVariable "customRemoteMessage";
 
 
 // Send center message to users 
-[nil,nil,rTitleText,"Mercenaries stashed a loot crate in rubble town]", "PLAIN",10] call RE;
+// [nil,nil,rTitleText,"Mercenaries stashed a loot crate in rubble town]", "PLAIN",10] call RE;
 
 
 diag_log(format["Loot event setup, waiting for %1 seconds", _wait_time]);
